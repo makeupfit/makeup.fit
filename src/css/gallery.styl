@@ -2,7 +2,7 @@
   position absolute
   width 100vw
   z-index 2000
-  height 100%
+  height 0
   top 0
   left 0
   .gallery-item
@@ -31,10 +31,12 @@
 
 .gallery .block,
 .gallery section
+  display: flex
   top 0
   left 0
   position absolute
   transition transform 1000ms ease-out, opacity 1000ms ease-out
+  height: 100%
 
 .gallery .block:first-child,
 .gallery section:first-child

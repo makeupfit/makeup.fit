@@ -1,6 +1,6 @@
-url = ''
+url = 'https://makeup.fit'
 
-description = ''
+description = 'Makeup.Fit revolutionizes the way you shop for foundation.'
 
 twitter =
   username: ''
@@ -12,10 +12,10 @@ pinterest =
 
 module.exports =
   site:
-    title:     ''
-    name:      ''
+    title:     'Makeup.Fit - Revolutionizing the way you shop for foundation'
+    name:      'Makeup.Fit'
     url:       url
-    copyright: ''
+    copyright: '© Makeup.Fit, Inc 2017'
 
   meta:
     description: description
@@ -44,4 +44,3 @@ module.exports =
       shareLink: ''
     slack:
       link: ''
-

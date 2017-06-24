@@ -14,7 +14,10 @@
   },
   "homepage": "https://github.com/makeupfit/makeup.fit#readme",
   "scripts": {
-    "build": "echo"
+    "build": "sake build",
+    "prepublishOnly": "sake build",
+    "pretest": "sake build",
+    "test": "sake test"
   },
   "devDependencies": {
     "autoprefixer": "7.1.1",
@@ -49,11 +52,5 @@
   "dependencies": {
     "moment-timezone": "0.5.13",
     "shop.js": "2.1.28"
-  },
-  "scripts": {
-    "build": "sake build",
-    "prepublishOnly": "sake build",
-    "pretest": "sake build",
-    "test": "sake test"
   }
 }

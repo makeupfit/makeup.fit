@@ -1,0 +1,155 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='x-ua-compatible', content='ie=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0')
+    meta(name='msapplication-tap-highlight' content='no')
+
+    title
+      block title
+        | #{site.title}
+
+    meta(name='description', content=meta.description)
+
+    // Facebook
+    meta(property='og:title', content=meta.facebook.title)
+    meta(property='og:description', content=meta.facebook.description)
+    meta(property='og:site_name', content=site.name)
+    meta(property='og:url', content=site.url)
+    meta(property='og:type', content='product')
+    meta(property='og:locale', content='en_US')
+    meta(property='og:image', content=meta.facebook.image)
+    meta(property='fb:app_id', content=meta.facebook.appid)
+
+    // Twitter
+    meta(name='twitter:title', content=meta.twitter.title)
+    meta(name='twitter:description', content=meta.twitter.description)
+    meta(name='twitter:site', content=social.twitter.username)
+    meta(name='twitter:image', content=meta.twitter.image)
+    meta(name='twitter:url', content=site.url)
+
+    link(rel='stylesheet', href='css/app.css', type='text/css')
+
+    link(rel='apple-touch-icon', sizes='180x180', href='/apple-touch-icon.png')
+    link(rel='icon', type='image/png', href='/favicon-32x32.png', sizes='32x32')
+    link(rel='icon', type='image/png', href='/favicon-16x16.png', sizes='16x16')
+    link(rel='mask-icon', href='/safari-pinned-tab.svg', color='#33edc1')
+    meta(name='theme-color', content='#ffffff')
+
+    link(href='https://fonts.googleapis.com/css?family=Poppins:300|Roboto:400,700', rel='stylesheet')
+    block style
+
+    block headscript
+    <!--[if lt IE 10]>
+    script(src='/js/polyfill/html5-shiv.js')
+    <![endif]-->
+
+  body
+    // Header
+    block preheader
+
+    block header
+      header
+        // nav.left
+        //   a#home(href='/')
+        //     img.logo(src='/img/logo.svg', alt=site.name)
+        // nav.right.links
+        //   a(href='/') Token Sale
+        //   a(href='/team') Team & Investors
+        //   a(href='/competition') Competitors
+        //   a(href='https://s3.amazonaws.com/static.unikoingold.com/whitepaper.pdf', target='_blank') Whitepaper
+        //   label.menu-button(for='open-menu')
+        //     | &#8801;
+
+    // input#open-menu.menu-state(type='checkbox')
+    // menu
+    //   ul
+    //     li
+    //       a(href='/') Token Sale
+    //     li
+    //       a(href='/team') Team & Investors
+    //     li
+    //       a(href='/competition') Competitors
+    //     li
+    //       a(href='https://s3.amazonaws.com/static.unikoingold.com/whitepaper.pdf', target='_blank') Whitepaper
+    //   label.close-menu(for='open-menu')
+    //     | &#10005;
+
+    main
+      block content
+
+    footer
+      // .logo
+      //   a(href='https://unikrn.com')
+      //     img(data-lazy='/img/unikrn-primary-wordmark-rgb-reverse.svg')
+      // .social
+      //   ul
+      //     li
+      //       a#social-facebook(href='https://news.unikrn.com/',
+      //       target='_blank', title='Blog')
+      //         i.fa.fa-newspaper-o
+      //     li
+      //       a#social-facebook(href='https://www.facebook.com/unikrnco',
+      //       target='_blank', title='Facebook')
+      //         i.fa.fa-facebook
+      //     li
+      //       a#social-instagram(href='https://www.instagram.com/unikrnco/',
+      //       target='_blank', title='Instagram')
+      //         i.fa.fa-instagram
+      //     li
+      //       a#social-slack(href=social.slack.link,
+      //       target='_blank', title='Slack')
+      //         i.fa.fa-slack
+      //     li
+      //       a#social-twitter(href='https://twitter.com/unikrnco',
+      //       target='_blank', title='Twitter')
+      //         i.fa.fa-twitter
+      //     li
+      //       a#social-twitch(href='https://www.twitch.tv/unikrn',
+      //       target='_blank', title='Twitch')
+      //         i.fa.fa-twitch
+      //     li
+      //       a#social-youtube(href='https://www.youtube.com/channel/UCUp4DPlEGf49uRmRAxacBDQ',
+      //       target='_blank', title='Youtube')
+      //         i.fa.fa-youtube
+
+      small.copyright #{site.copyright}
+
+    <!--[if IE]>
+    .browserupgrade
+    p
+      | You are using an strong outdated  browser. Please
+      | a(href='http://browsehappy.com/') upgrade your browser to improve
+      | your experience and security.
+    <![endif]-->
+
+    <!--[if lt IE 10]>
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
+    script.
+      window.jQuery || document.write('<script src="/js/vendor/jquery-1.12.4.min.js"><\\/script>')
+    script(src='/js/polyfill/ie-love.js')
+    <![endif]-->
+
+    <!--[if gt IE 9]><!-->
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js')
+    script.
+      window.jQuery || document.write('<script src="/js/vendor/jquery-3.1.0.min.js"><\\/script>')
+    <!--<![endif]-->
+
+    block script
+
+    script(src='/js/app.js')
+
+    if production
+      script.
+        // Add some thing here!
+        // !function(t,e,a){var r,n,c,i,o,s,l,u;if(null==t.analytics){for(r=[],r.methods=['ab','alias','group','identify','off','on','once','page','pageview','ready','track','trackClick','trackForm','trackLink','trackSubmit'],l=r.methods,c=function(t){r[t]=function(){var e;return e=Array.prototype.slice.call(arguments),e.unshift(t),r.push(e),r}},i=0,o=l.length;o>i;i++)s=l[i],c(s);return u=e.createElement('script'),u.async=!0,u.type='text/javascript',u.src=a,n=e.getElementsByTagName('script')[0],n.parentNode.insertBefore(u,n),t.analytics=r}}(window,document,'//cdn.hanzo.io/a/kpak.js');
+
+      script.
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-K4PTPWH');
+

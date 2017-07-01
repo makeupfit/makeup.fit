@@ -1,35 +1,36 @@
 footer
   display: table
+  width: 100vw
+  height: 100%
+  background: #57B196;
+  background: -webkit-linear-gradient(to bottom, #57B196, #67b19a);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #57B196, #67b19a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-  .logo
-    float: left
-
-    img
-      height: 50px
-      margin: 10px 20px
-
-
-  .social
-    float: right
-
-    ul
-      list-style: none
-
-      li
-        margin: 0
-        display: block
-        float: left
-        height: 30px
-        line-height: 2em
-        margin: 20px 20px 20px 0
-    a
-      span
-        margin-left: 10px
-
-  small
-    display:inline-block
-    left: 0
-    right: 0
-    margin: 0 auto
+  nav
+    max-width: 800px
+    padding: 30px
+    margin: auto
+    text-align: left
     line-height: 2em
-    margin: 20px
+
+    .left
+      column: 1/2
+
+    .right
+      column: 1/2
+
+    a
+      color: #48695f
+      column: 1/1
+      padding: 8px
+
+    span
+      color: grey
+      column: 1/1
+      padding: 8px
+
+    small
+      column: 1/1
+      color: gray
+      padding-bottom: 30px
+      padding-left: 8px

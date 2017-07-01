@@ -86,41 +86,32 @@ html(lang='en')
       block content
 
     footer
-      // .logo
-      //   a(href='https://unikrn.com')
-      //     img(data-lazy='/img/unikrn-primary-wordmark-rgb-reverse.svg')
-      // .social
-      //   ul
-      //     li
-      //       a#social-facebook(href='https://news.unikrn.com/',
-      //       target='_blank', title='Blog')
-      //         i.fa.fa-newspaper-o
-      //     li
-      //       a#social-facebook(href='https://www.facebook.com/unikrnco',
-      //       target='_blank', title='Facebook')
-      //         i.fa.fa-facebook
-      //     li
-      //       a#social-instagram(href='https://www.instagram.com/unikrnco/',
-      //       target='_blank', title='Instagram')
-      //         i.fa.fa-instagram
-      //     li
-      //       a#social-slack(href=social.slack.link,
-      //       target='_blank', title='Slack')
-      //         i.fa.fa-slack
-      //     li
-      //       a#social-twitter(href='https://twitter.com/unikrnco',
-      //       target='_blank', title='Twitter')
-      //         i.fa.fa-twitter
-      //     li
-      //       a#social-twitch(href='https://www.twitch.tv/unikrn',
-      //       target='_blank', title='Twitch')
-      //         i.fa.fa-twitch
-      //     li
-      //       a#social-youtube(href='https://www.youtube.com/channel/UCUp4DPlEGf49uRmRAxacBDQ',
-      //       target='_blank', title='Youtube')
-      //         i.fa.fa-youtube
+      nav
+        .left
+          span
+            | About Us
+          a(href='/')
+            | Home
+          a(href='https://medium.com/makeup-fit', target='_blank')
+            | Blog
+          a(href='/privacy')
+            | Privacy
+          a(href='/terms')
+            | Terms
 
-      small.copyright #{site.copyright}
+        .right
+          span
+            | Follow us
+          a(href='https://facebook.com/getmakeupfit', target='_blank')
+            | Facebook
+          a(href='https://twitter.com/getmakeupfit', target='_blank')
+            | Twitter
+          a(href='https://instagram.com/getmakeupfit', target='_blank')
+            | Instagram
+          a(href='https://medium.com/makeup-fit', target='_blank')
+            | Medium
+
+        small.copyright #{site.copyright}
 
     <!--[if IE]>
     .browserupgrade

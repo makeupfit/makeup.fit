@@ -33,12 +33,12 @@ module.exports =
 
   social:
     email:
-      shareLink: ''
+      shareLink: 'info@makeup.fit'
     twitter:
       username:  "@#{twitter.username}"
       shareLink: ''
     facebook:
-      username:  ''
+      username:  'getmakeupfit'
       shareLink: ''
     googlePlus:
       shareLink: ''

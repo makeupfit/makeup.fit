@@ -12,7 +12,7 @@ pinterest =
 
 module.exports =
   site:
-    title:     'Makeup.Fit - Revolutionizing the way you shop for foundation'
+    title:     'Makeup.Fit - Your foundation destination'
     name:      'Makeup.Fit'
     url:       url
     copyright: '© Makeup.Fit, Inc 2017'
